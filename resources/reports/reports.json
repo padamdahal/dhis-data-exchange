@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Tubercluosis Control Program Case Registration",
+		"type": "genericSQL",
+		"config": {
+			"sqlPath": "resources/sql/11_1_Tubercluosis_Case_Registration.sql",
+			"dhisConfig": "resources/sql/11_1_Tubercluosis_Case_Registration.json"
+		}
+	},
+	{
+		"name": "Tubercluosis Control Program Registration (BC or CD) all new ",
+		"type": "genericSQL",
+		"config": {
+			"sqlPath": "resources/sql/11_1_Tubercluosis_BC_or_CD_Registration_allnew.sql",
+			"dhisConfig": "resources/sql/11_1_Tubercluosis_Case_Registration.json"
+		}
+	},
+	{
+		"name": "Reporting Status",
+		"type": "genericSQL",
+		"config": {
+			"sqlPath": "resources/sql/new_and_existing_clients.sql",
+			"dhisConfig": "resources/dhis/01_Reporting_Status_Dataset.json"
+		}
+	}
+]
