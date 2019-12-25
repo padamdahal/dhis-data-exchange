@@ -9,6 +9,9 @@
 			},
 			"two":{
 				"sqlPath": "resources/sql/new_and_existing_clients.sql"
+			},
+			"three":{
+				"sqlPath": "resources/sql/total_inpatient_days.sql"
 			}
 		}
 	}
