@@ -5,9 +5,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo $page_title . ' : HOME';?></title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="resources/assets/jquery.min.js"></script>
+		<link rel="stylesheet" href="resources/assets/jquery-ui.css">
+		<script src="resources/assets/jquery-ui.js"></script>
 		<script src="resources/assets/underscore-min.js"></script>
 		<style type="text/css">
 
@@ -65,6 +65,22 @@
 			margin: 10px;
 			border: 1px solid #D0D0D0;
 			box-shadow: 0 0 8px #D0D0D0;
+		}
+		.send, .preview{
+			background:green;
+			padding:5px;
+			border:green;
+			text-decoration:none;
+			color:#fff;
+			margin:10px 15px;
+		}
+		table{
+			border:1px solid #ccc;
+			padding: 5px 0;
+			width:100%;
+		}
+		table tbody tr td{
+			margin:20px;
 		}
 		</style>
 		<script type="text/javascript">
@@ -196,8 +212,8 @@
 					
 					<?php 
 						foreach ($reports_json as $key=>$value){
-							$row = '<tr>';
-							$row .= '<td>';
+							$row = '<tr style="padding:10px">';
+							$row .= '<td style="width:70%">';
 							$row .= $value->name;
 							$row .= '</td>';
 							
@@ -206,7 +222,7 @@
 							$row .= '</td>';
 							
 							$row .=  '<td>';
-							$row .= '<a class="send" href="index.php/reporting/send/'.$key.'/?period=207602&orgUnit=WaY0NFhl8Y3&startDate=2018-05-01&endDate=2018-12-30">Send</a>';
+							$row .= '<a class="send" href="index.php/reporting/send/'.$key.'/?period=207602&orgUnit=WaY0NFhl8Y3&startDate=2018-05-01&endDate=2018-12-30">Send to HMIS</a>';
 							$row .= '</td>';
 							$row .= '</tr>';
 							echo $row;
